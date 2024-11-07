@@ -33,17 +33,17 @@ from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes
 url = "https://us-south.ml.cloud.ibm.com"
 
 # These global variables will be updated in get_credentials() functions
-watsonx_project_id = ""
+watsonx_project_id = "f2344a4c-5b8c-4a98-88d8-0ef221f1a838"
 # Replace with your IBM Cloud key
-api_key = ""
+api_key = "EeptYMF9R0Q35dMj5AIQ6SQlqiq0m_9_Pa0Hx7SoOU8z"
 
 def get_credentials():
 
-    load_dotenv()
+    # load_dotenv()
 
     # Update the global variables that will be used for authentication in another function
-    globals()["api_key"] = os.getenv("api_key", None)
-    globals()["watsonx_project_id"] = os.getenv("project_id", None)
+    globals()["api_key"] = api_key
+    globals()["watsonx_project_id"] = watsonx_project_id
 
     print("*** Got credentials***")
 
